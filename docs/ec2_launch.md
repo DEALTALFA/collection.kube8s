@@ -9,13 +9,13 @@
 
 ## Role variables
 
-key
-AMI_imageinstance_type
-subnet
-aws_access
-aws_secret
-region 
-sg_group
+* key
+* AMI_imageinstance_type
+* subnet
+* aws_access
+* aws_secret
+* region 
+* sg_group
 
 ## playbook example
 
