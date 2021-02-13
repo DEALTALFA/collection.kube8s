@@ -37,7 +37,7 @@ and follow the steps below
 
       for more information on _privilege_escalation_ [visit here](https://docs.ansible.com/ansible/latest/user_guide/become.html#become-directives) 			
  * Now run your playbook
- [My playbook](link)
+ [My playbook](https://github.com/DEALTALFA/collection.kube8s/blob/master/build/first.yml)
 
 ** ** 
    
