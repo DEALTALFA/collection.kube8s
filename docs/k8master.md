@@ -1,4 +1,5 @@
 # dealtalfa.kube8s.k8master
+![](https://img.shields.io/badge/kubernetes-masternode-orange)
  
  Configure the instances having tag `K8_master` as Master Node
 
