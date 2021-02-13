@@ -12,3 +12,12 @@ None
       remote_user: root
       roles:
         - dealtalfa.kubernetes.k8slave
+License
+-------
+
+BSD
+
+Author Information
+------------------
+
+[DEALTALFA@linkedIn](https://www.linkedin.com/in/deepak-yadav-588685127/)
