@@ -1,6 +1,6 @@
 # dealtalfa.kube8s.k8master
  
- Configure the instances having tag `K8_master`
+ Configure the instances having tag `K8_master` as Master Node
 
 ## Role variables
 
