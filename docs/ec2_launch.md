@@ -1,0 +1,25 @@
+
+ # dealtalfa.kube8s.ec2_launch
+ 
+ Role for launching Instance
+ 
+- [ ]  **Master Node gets tag k8_master when launched**
+- [ ]  **Slave Node gets tag k8_slave when launched**
+
+
+## Role variables
+
+key
+AMI_imageinstance_type
+subnet
+aws_access
+aws_secret
+region 
+sg_group
+
+## playbook example
+
+- hosts: localhost
+  remote_user: root
+  roles:
+    - dealtalfa.kubernetes.ec2_launch

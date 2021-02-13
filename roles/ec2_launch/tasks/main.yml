@@ -1,0 +1,38 @@
+---
+# tasks file for ec2_launch
+
+- name: "lauching Master"
+  ec2:
+          key_name: "{{ key }}"
+          instance_type: "{{ instance_type }}"
+          image: "{{ AMI_image }}"
+          count: 1
+          vpc_subnet_id: "{{ subnet }}"
+          instance_tags:
+                  Name: "K8_master"
+          region: "{{ region }}"
+          group_id: "{{ sg_group }}"
+          aws_access_key: "{{ aws_access }}"
+          aws_secret_key: "{{ aws_secret }}"
+          assign_public_ip: yes
+
+- name: "launching slave"
+  ec2:
+          key_name: "{{ key }}"
+          instance_type: "{{ instance_type }}"
+          image: "{{ AMI_image }}"
+          count: "{{ wn }}"
+          vpc_subnet_id: "{{ subnet }}"
+          instance_tags:
+                  Name: "K8_slave"
+          region: "{{ region }}"
+          group_id: "{{ sg_group }}"
+          aws_access_key: "{{ aws_access }}"
+          aws_secret_key: "{{ aws_secret }}"
+          assign_public_ip: yes
+
+- name: "Waiting for Instances to Launch "
+  pause:
+          seconds: 70
+- name: " Refresh inventory to ensure new instances exist in inventory"
+  meta: "refresh_inventory"

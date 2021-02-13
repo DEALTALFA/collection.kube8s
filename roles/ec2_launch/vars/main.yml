@@ -1,0 +1,11 @@
+---
+# vars file for ec2_launch
+
+key: "your key name"
+AMI_image: " Image tag "
+instance_type: "instance type"
+subnet: "subnet-87777eef"
+aws_access: "your access key"
+aws_secret: "your secret key"
+region: "your region"
+sg_group: "your security group"
