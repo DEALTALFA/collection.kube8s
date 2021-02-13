@@ -20,7 +20,7 @@ To make the inventory dynamic for ec2 download 2 file `ec2.py` and `ec2.ini` fro
 and follow the steps below
  * Make a new folder. let assume "myfolder"
  * download them into myfolder folder
-   - * make them executable with command `chmod +x ec2.*`
+   -  make them executable with command `chmod +x ec2.*`
  * type this in terminal to initalise environment variable that is used by dynamic inventory
    -  export AWS_ACCESS_kEY_ID=your_Access_Key
    -  export AWS_SECRET_ACCESS_KEY= your_secret_key
