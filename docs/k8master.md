@@ -3,7 +3,15 @@
  Configure the instances having tag `K8_master` as Master Node
 
 ## Role variables
+-----------------
+None
 
+Requirements
+------------
+None
+
+Dependencies
+------------
 None
 
 ## playbook example
