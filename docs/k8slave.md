@@ -1,4 +1,5 @@
 # dealtalfa.kube8s.k8slave
+![](https://img.shields.io/badge/kubernetes-slavenode-orange)
  
  Configure the instances having tag `K8_slave` as Slave Node
 
