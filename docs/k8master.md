@@ -8,7 +8,7 @@ None
 
 ## playbook example
 
-- hosts: localhost
-  remote_user: root
-  roles:
-    - dealtalfa.kubernetes.k8master
+    - hosts: localhost
+      remote_user: root
+      roles:
+        - dealtalfa.kubernetes.k8master
