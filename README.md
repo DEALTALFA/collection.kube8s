@@ -35,7 +35,7 @@ and follow the steps below
 		become=true
 		become_method=sudo
 
-      for more information on _privilege_escalation_ [visit here](link) 			
+      for more information on _privilege_escalation_ [visit here](https://docs.ansible.com/ansible/latest/user_guide/become.html#become-directives) 			
  * Now run your playbook
  [My playbook](link)
 
