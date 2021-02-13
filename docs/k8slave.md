@@ -3,7 +3,11 @@
  Configure the instances having tag `K8_slave` as Slave Node
 
 ## Role variables
+-----------------
+None
 
+Requirements
+------------
 None
 
 ## playbook example
@@ -16,6 +20,10 @@ License
 -------
 
 BSD
+
+Dependencies
+------------
+None
 
 Author Information
 ------------------
