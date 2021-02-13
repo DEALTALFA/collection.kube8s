@@ -1,0 +1,27 @@
+- hosts: localhost
+  vars_prompt:
+          - name: wn
+            prompt: "Enter the Number of Worker Noder you want to launch"
+            private: no
+  roles:
+          - dealtalfa.kubernetes.ec2_launch
+
+
+- hosts: tag_Name_K8_master
+  vars:
+          ansible_python_interpreter: "/usr/bin/python2.7"
+  roles:
+          - dealtalfa.kubernetes.k8master
+
+
+- hosts: tag_Name_K8_slave
+  vars:
+          ansible_python_interpreter: "/usr/bin/python2.7"
+  vars_prompt:
+          - name: join_token
+            prompt: "Paste the joining Token you just copied "
+            private: no
+  roles:
+          - dealtalfa.kubernetes.k8slave
+
+            
