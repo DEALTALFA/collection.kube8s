@@ -2,7 +2,7 @@
  
  Configure the instances having tag `K8_slave` as Slave Node
 
-## Role variables
+Role variables
 -----------------
 None
 
