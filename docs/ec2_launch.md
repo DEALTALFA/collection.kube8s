@@ -17,7 +17,11 @@
 * region 
 * sg_group
 
-## playbook example
+Requirements
+------------
+boto module of python
+
+## Playbook example
 
     - hosts: localhost
       remote_user: root
