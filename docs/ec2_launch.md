@@ -19,7 +19,7 @@ sg_group
 
 ## playbook example
 
-- hosts: localhost
-  remote_user: root
-  roles:
-    - dealtalfa.kubernetes.ec2_launch
+    - hosts: localhost
+      remote_user: root
+      roles:
+      - dealtalfa.kubernetes.ec2_launch
