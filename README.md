@@ -22,8 +22,8 @@ and follow the steps below
  * download them into myfolder folder
    - * make them executable with command `chmod +x ec2.*`
  * type this in terminal to initalise environment variable that is used by dynamic inventory
-   - * export AWS_ACCESS_kEY_ID=your_Access_Key
-   - * export AWS_SECRET_ACCESS_KEY= your_secret_key
+   -  export AWS_ACCESS_kEY_ID=your_Access_Key
+   -  export AWS_SECRET_ACCESS_KEY= your_secret_key
  * In ansible configuration file i.e. in path */ect/ansible/ansible.cfg*
     **Note:** If file don't exists make this file `ansible.cfg` in that path and write
 			[defaults]
