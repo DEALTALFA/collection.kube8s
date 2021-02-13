@@ -23,3 +23,13 @@
       remote_user: root
       roles:
       - dealtalfa.kubernetes.ec2_launch
+      
+ License
+-------
+
+BSD
+
+Author Information
+------------------
+
+[DEALTALFA@linkedIn](https://www.linkedin.com/in/deepak-yadav-588685127/)
