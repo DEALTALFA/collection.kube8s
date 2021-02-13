@@ -33,7 +33,7 @@ and follow the steps below
 		remote_user=username
 		[privilege_escalation]
 		become=true
-           	become_method=sudo
+		become_method=sudo
 
       for more information on _privilege_escalation_ [visit here](link) 			
  * Now run your playbook
