@@ -7,9 +7,9 @@ galaxy_info:
 
   min_ansible_version: 2.9
   platforms:
-    - name: RedHat
-    versions:
-        - all
+        - name: RedHat
+        versions:
+            - all
   # - name: SomePlatform
   #   versions:
   #   - all
@@ -18,8 +18,8 @@ galaxy_info:
   #   - 99.99
 
   galaxy_tags:
-    - cloud
-    - ec2
+        - cloud
+        - ec2
 
 dependencies: []
   # List your role dependencies here, one per line. Be sure to remove the '[]' above,
