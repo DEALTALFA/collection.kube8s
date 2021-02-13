@@ -21,6 +21,10 @@ Requirements
 ------------
 boto module of python
 
+Dependencies
+------------
+None
+
 ## Playbook example
 
     - hosts: localhost
