@@ -32,6 +32,7 @@ and follow the steps below
 		inventory= full_path/myfolder
 		private_key_file=your_private_key
 		remote_user=username
+		host_key_checking=false
 		[privilege_escalation]
 		become=true
 		become_method=sudo
