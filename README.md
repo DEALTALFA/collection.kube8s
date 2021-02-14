@@ -43,6 +43,4 @@ and follow the steps below
  * Put your configuration and credentials in main.yml file of vars folder.
  * Now run your playbook
  [My playbook](https://github.com/DEALTALFA/collection.kube8s/blob/master/build/playbook.yml)
-
-** ** 
    
