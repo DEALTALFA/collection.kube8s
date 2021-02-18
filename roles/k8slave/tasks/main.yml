@@ -5,9 +5,11 @@
   file:
           path: "/etc/yum.repos.d/kubernetes.repo"
           state: touch
+          mode: 0644
   register: x
 - name: "confguring repo for K8s"
-  shell:  |
+  shell: |
+            set -o pipefail && \
             cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
             [kubernetes]
             name=Kubernetes
@@ -17,6 +19,8 @@
             repo_gpgcheck=1
             gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
             EOF
+  args:
+          executable: /usr/bin/bash
   when: x["diff"]["before"]["state"]!="file"
 
 - name: "Installing Docker"
@@ -28,7 +32,7 @@
   service:
           name: "docker"
           state: started
-          enabled: yes
+          enabled: true
 
 - name: "Installing kubeadm"
   package:
@@ -39,11 +43,12 @@
   service:
           name: "kubelet"
           state: started
-          enabled: yes
+          enabled: true
 
 - name: "Setting up driver docker cgroup to use systemd instead of cgroupfs"
   copy:
           dest: "/etc/docker/daemon.json"
+          mode: 0644
           content: '{
                   "exec-opts": ["native.cgroupdriver=systemd"]
                   }'
@@ -72,9 +77,10 @@
                   net.bridge.bridge-nf-call-ip6tables = 1
                   net.bridge.bridge-nf-call-iptables = 1
           state: present
-
+  changed_when: false
 - name: " Starting sysctl service"
   command: "sysctl --system"
+  changed_when: false
 
 - name: "Joining to the master....."
   command: "{{ join_token }}"

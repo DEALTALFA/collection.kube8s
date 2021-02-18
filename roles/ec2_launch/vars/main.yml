@@ -1,11 +1,11 @@
 ---
 # vars file for ec2_launch
 
-key: "your key name"
-AMI_image: " Image tag "
-instance_type: "instance type"
+key: "deepak"
+AMI_image: "ami-0a9d27a9f4f5c0efc"
+instance_type: "t2.small"
 subnet: "subnet-87777eef"
-aws_access: "your access key"
-aws_secret: "your secret key"
-region: "your region"
-sg_group: "your security group"
+aws_access: "AKIAXJYUB5545WXGIVZV"
+aws_secret: "WvkUsyM5GfmzV2U1Oiovpu0GkfYR85ndIq33XVQv"
+region: "ap-south-1"
+sg_group: "sg-08e21b677316bdfe6"

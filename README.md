@@ -13,36 +13,37 @@ To use specific role from the collection use in this format
   roles:
 	- dealtalfa.kubernetes.<role_name>
 ```
+Tested on 
+----------
+AWS image :Amazon Linux 2 AMI
 
 Dynamic Inventory
 -----------------
-To make the inventory dynamic for ec2  instances download 2 file `ec2.py` and `ec2.ini` from [here](https://github.com/ansible/ansible/tree/stable-2.9/contrib/inventory)
+To make the inventory dynamic for ec2 download 2 file `ec2.py` and `ec2.ini` from [here](https://github.com/ansible/ansible/tree/stable-2.9/contrib/inventory)
 and follow the steps below
+
  * Make a new folder. let assume "myfolder"
+
  * download them into myfolder folder
-   -  * In the *ec2.py* file comment out this line`from ansible.module_utils import ec2 as ec2_utils`
+
    -  make them executable with command `chmod +x ec2.*`
+
  * type this in terminal to initalise environment variable that is used by dynamic inventory
-   -  export AWS_ACCESS_kEY_ID='Your_Access_Key'
-   -  export AWS_SECRET_ACCESS_KEY='Your_secret_key'
+
+   -  export AWS_ACCESS_kEY_ID=your_Access_Key
+
+   -  export AWS_SECRET_ACCESS_KEY= your_secret_key
+
  * In ansible configuration file i.e. in path */ect/ansible/ansible.cfg*
-    **Note:** If file don't exists ,make file `ansible.cfg` in that path and write.
+
+    **Note:** If file don't exists make this file `ansible.cfg` in that path and write.
 		
 		[defaults]
 		inventory= full_path/myfolder
-		private_key_file=your_private_key
+		private_file=your_private_key
 		remote_user=username
-		host_key_checking=false
 		[privilege_escalation]
 		become=true
 		become_method=sudo
 
-      for more information on _privilege_escalation_ [visit here](https://docs.ansible.com/ansible/latest/user_guide/become.html#become-directives) 			
- 
- * Go to the path where collection is installed and find this collection and role of ec2_launch in roles folder 
- * Put your configuration and credentials in main.yml file of vars folder.
- * Now run your playbook
- [My playbook](https://github.com/DEALTALFA/collection.kube8s/blob/master/build/playbook.yml)
-
-** ** 
-   
+for more information on _privilege_escalation_ [visit here](https://docs.ansible.com/ansible/latest/user_guide/become.html#become-directives) 			   

@@ -1,7 +1,10 @@
 - hosts: localhost
   vars_prompt:
           - name: wn
-            prompt: "Enter the Number of Worker Noder you want to launch"
+            prompt: "Enter the Number of Worker Node you want to launch"
+            private: no
+          - name: mn
+            prompt: "Enter the Number of Master Node you want to launch"
             private: no
   roles:
           - dealtalfa.kubernetes.ec2_launch

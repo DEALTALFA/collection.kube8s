@@ -4,7 +4,7 @@ namespace: dealtalfa
 
 # The name of the collection. Has the same character restrictions as 'namespace'
 name: kubernetes
-version: 1.0.2
+version: 1.0.4
 readme: README.md
 authors:
 - Deepak Yadav (alfo7742@gmail.com)
@@ -14,7 +14,11 @@ tags:
         - kubernetes
         - cloud
         - cluster
-
+        - multinode
+#platform:
+        #- name: Amazon Linux 2 AMI
+          # versions:
+          #      - 8
 dependencies: {}
 
 # The URL of the originating SCM repository

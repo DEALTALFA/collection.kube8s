@@ -1,11 +1,8 @@
 galaxy_info:
   role_name: k8master      
   author: Deepak Yadav
-  description: Configure master Node
-  company: Nil
-
+  description: Role for configuring Master Node
   min_ansible_version: 2.9
-
   platforms:
   - name: RedHat
     versions:
@@ -19,9 +16,8 @@ galaxy_info:
   #   - 99.99
 
   galaxy_tags:
-    - cloud
-    - ec2
-
+          - master
+          - cloud
 dependencies: []
   # List your role dependencies here, one per line. Be sure to remove the '[]' above,
   # if you add dependencies to this list.
