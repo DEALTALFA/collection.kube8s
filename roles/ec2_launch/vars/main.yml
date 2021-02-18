@@ -1,11 +1,11 @@
 ---
 # vars file for ec2_launch
 
-key: "deepak"
-AMI_image: "ami-0a9d27a9f4f5c0efc"
-instance_type: "t2.small"
-subnet: "subnet-87777eef"
-aws_access: "AKIAXJYUB5545WXGIVZV"
-aws_secret: "WvkUsyM5GfmzV2U1Oiovpu0GkfYR85ndIq33XVQv"
+key: "your key name"
+AMI_image: "amazon image tag"
+instance_type: "type of instance"
+subnet: "your subnet"
+aws_access: "AWS acess key"
+aws_secret: "your AWS secret key"
 region: "ap-south-1"
-sg_group: "sg-08e21b677316bdfe6"
+sg_group: "your security guard tag"
