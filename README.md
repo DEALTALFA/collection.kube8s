@@ -46,4 +46,11 @@ and follow the steps below
 		become=true
 		become_method=sudo
 
-for more information on _privilege_escalation_ [visit here](https://docs.ansible.com/ansible/latest/user_guide/become.html#become-directives) 			   
+      for more information on _privilege_escalation_ [visit here](https://docs.ansible.com/ansible/latest/user_guide/become.html#become-directives) 			
+ 
+ * Go to the path where collection is installed and find this collection and role of ec2_launch in roles folder 
+ * Put your configuration and credentials in main.yml file of vars folder.
+ * Now run your playbook
+ [My playbook](https://github.com/DEALTALFA/collection.kube8s/blob/master/build/playbook.yml)
+   
+
