@@ -30,7 +30,7 @@ and follow the steps below
 
  * type this in terminal to initalise environment variable that is used by dynamic inventory
 
-   -  export AWS_ACCESS_kEY_ID=your_Access_Key
+   -  export AWS_ACCESS_KEY_ID=your_Access_Key
 
    -  export AWS_SECRET_ACCESS_KEY= your_secret_key
 
